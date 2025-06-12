@@ -1,0 +1,31 @@
+{
+    "version": 0,
+    "requires": {
+        "cockpit": "251"
+    },
+    "tools": {
+        "docker": {
+            "label": "Docker",
+            "path": "/docker/index.html",
+            "keywords": [
+                {
+                    "matches": ["docker", "container", "image", "containerization"]
+                }
+            ]
+        }
+    },
+    "content-security-policy": "default-src 'self' 'unsafe-inline' 'unsafe-eval'",
+    "name": "docker",
+    "priority": 30,
+    "menu": {
+        "index": {
+            "label": "Docker",
+            "order": 30,
+            "keywords": [
+                {
+                    "matches": ["docker", "container", "image"]
+                }
+            ]
+        }
+    }
+}

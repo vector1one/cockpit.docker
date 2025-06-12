@@ -1,0 +1,366 @@
+/* Cockpit Docker Module Styles */
+
+/* Loading states */
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.spinner-icon {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Empty states */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+
+.empty-state-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.empty-state h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.empty-state p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tables */
+.table th {
+    background-color: #f8f9fa;
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table .btn-group {
+    white-space: nowrap;
+}
+
+/* Status labels */
+.label {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.label-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.label-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.label-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.label-default {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* Buttons */
+.btn-group .btn {
+    margin-right: 0;
+}
+
+.btn-sm {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.btn .fa {
+    margin-right: 4px;
+}
+
+/* Header actions */
+.content-header-extra {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.content-header-extra .btn-group {
+    float: right;
+}
+
+.content-header-extra .btn {
+    margin-left: 5px;
+}
+
+/* Tabs */
+.nav-tabs {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.nav-tabs > li > a {
+    color: #495057;
+    font-weight: 500;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-right: 20px;
+    padding: 12px 0;
+}
+
+.nav-tabs > li > a:hover {
+    background-color: transparent;
+    border-bottom-color: #007bff;
+    color: #007bff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #007bff;
+    color: #007bff;
+}
+
+/* Panels */
+.panel {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+}
+
+.panel-heading {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 20px;
+}
+
+.panel-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+/* Modals */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 20px;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 15px 20px;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    height: 40px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.help-block {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.checkbox label {
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+/* Container logs */
+.logs-content {
+    background-color: #2d3748;
+    color: #e2e8f0;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 20px;
+    border-radius: 4px;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: none;
+    margin: 0;
+}
+
+/* System info */
+.dl-horizontal dt {
+    width: 120px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.dl-horizontal dd {
+    margin-left: 140px;
+    word-wrap: break-word;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-header-extra .btn-group {
+        float: none;
+        margin-bottom: 15px;
+    }
+    
+    .dl-horizontal dt {
+        width: auto;
+        text-align: left;
+    }
+    
+    .dl-horizontal dd {
+        margin-left: 0;
+    }
+    
+    .table-responsive {
+        border: none;
+    }
+    
+    .btn-group .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+/* Hidden utility */
+.hidden {
+    display: none !important;
+}
+
+/* Text utilities */
+.text-muted {
+    color: #6c757d;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Docker-specific styles */
+.docker-container-running {
+    border-left: 4px solid #28a745;
+}
+
+.docker-container-stopped {
+    border-left: 4px solid #dc3545;
+}
+
+.docker-image-row:hover {
+    background-color: #f8f9fa;
+}
+
+.docker-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.docker-stat-item {
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    min-width: 120px;
+}
+
+.docker-stat-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: #007bff;
+    display: block;
+}
+
+.docker-stat-label {
+    font-size: 12px;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
